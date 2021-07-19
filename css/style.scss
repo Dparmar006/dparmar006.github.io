@@ -24,9 +24,13 @@ a {
   color: $fontColor;
   border-bottom: 3px solid $backgroundColor;
   transition: all 450ms ease-out;
+  text-decoration: none;
   &:hover {
     border-bottom: 3px solid $accentColor;
   }
+}
+ul {
+  list-style: none;
 }
 i {
   color: $fontColor;
@@ -118,7 +122,7 @@ i {
 }
 
 .mobile-nav {
-  top: -100%;
+  top: -120%;
   height: 100vh;
   width: 100%;
   z-index: 1;
@@ -158,6 +162,7 @@ section {
   padding: 2rem;
   scroll-snap-align: start;
   height: 100%;
+  overflow: hidden;
 }
 .section-title {
   font-size: 2rem;
@@ -219,7 +224,6 @@ section {
   }
   .webdev-img img {
     width: 100%;
-    opacity: 0.5;
   }
 }
 
@@ -231,11 +235,11 @@ section {
 
   .project-name {
     padding: 0.6rem 0;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .project-details {
     margin-left: 4rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     list-style: disc;
   }
 }
@@ -243,7 +247,8 @@ section {
 // social-media
 .social-media {
   width: 50%;
-  display: flexbox;
+  display: flex;
+  justify-content: space-between;
   a {
     border: none;
   }
@@ -265,8 +270,41 @@ section {
   .mobile-nav-toggle {
     display: grid;
   }
+  // section
   section {
     padding: 1rem;
+    .section-title {
+      font-size: 1.4rem;
+    }
+  }
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .section-content {
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 75%;
+    gap: 1rem;
+  }
+
+  .projects .project-name {
+    padding-top: 0.1rem;
+    font-size: 1rem;
+  }
+  .projects .project-details {
+    margin-left: 2rem;
+  }
+  .project-name a {
+    // padding: 0.3rem 0;
+    font-size: 1rem;
+  }
+  .section-btn {
+    margin-top: 0rem;
   }
   .landing {
     flex-direction: column;
@@ -278,7 +316,7 @@ section {
       width: 100%;
       .landing-welcome-msg {
         font-size: 1.8rem;
-        text-align: center;
+        // text-align: center;
       }
       .landing-subtitle {
         font-size: 1.4rem;

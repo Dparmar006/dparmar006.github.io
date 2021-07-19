@@ -378,7 +378,6 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 75%;
-    gap: 1rem;
   }
   .projects .project-name {
     padding-top: 0.1rem;

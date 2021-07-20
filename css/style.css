@@ -150,19 +150,24 @@ i {
 }
 
 .mobile-nav {
-  top: -200%;
-  height: 100vh;
+  top: 0px;
+  height: 0px;
+  overflow: hidden;
   width: 100%;
-  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
   position: fixed;
   background: #d1d1d1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .mobile-nav ul li {

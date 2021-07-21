@@ -21,10 +21,10 @@ body {
 a {
   cursor: pointer;
   color: #d1d1d1;
-  border-bottom: 3px solid #1d1d1d;
   -webkit-transition: all 450ms ease-out;
   transition: all 450ms ease-out;
   text-decoration: none;
+  border-bottom: 3px solid #1d1d1d;
 }
 
 a:hover {
@@ -60,6 +60,7 @@ i {
 }
 
 .btn:hover {
+  border: 4px solid #c56cf0;
   background-color: #c56cf0;
   color: #1d1d1d;
 }
@@ -221,7 +222,7 @@ section {
 }
 
 .section-img {
-  width: 50%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,11 +239,14 @@ section {
 }
 
 .section-img img {
-  width: 75%;
+  width: 100%;
+  height: 100%;
 }
 
 .section-btn {
   margin-top: 2rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .landing {
@@ -328,6 +332,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .social-media a {
@@ -345,6 +350,12 @@ section {
   color: #c56cf0;
 }
 
+@media screen and (min-width: 1000px) {
+  .mobile-nav {
+    height: 0px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .navbar {
     display: none;
@@ -354,7 +365,7 @@ section {
     display: grid;
   }
   section {
-    padding: 1rem;
+    padding: 1rem 1rem 0rem;
   }
   section .section-title {
     font-size: 1.4rem;
@@ -367,6 +378,7 @@ section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: calc(100% - 3rem);
     gap: 1rem;
   }
   .section-content {
@@ -375,14 +387,13 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 75%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .projects .project-name {
     padding-top: 0.1rem;

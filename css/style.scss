@@ -48,7 +48,7 @@ i {
   transition: all 450ms ease-out;
   font-weight: 500;
   border-radius: 0.2rem;
-
+  user-select: none;
   &:hover {
     border: 4px solid $accentColor;
     background-color: $accentColor;
@@ -133,7 +133,7 @@ i {
   background: $fontColor;
   display: flex;
   justify-content: center;
-  transition: all 0.5s ease-in;
+  transition: height 0.5s ease-in;
   ul {
     li {
       margin: 0.5rem;
@@ -186,7 +186,7 @@ section {
   width: 60%;
 }
 .section-img img {
-  width: 100%;
+  width: 85%;
   height: 100%;
 }
 

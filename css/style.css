@@ -57,6 +57,10 @@ i {
   transition: all 450ms ease-out;
   font-weight: 500;
   border-radius: 0.2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .btn:hover {
@@ -167,8 +171,8 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: height 0.5s ease-in;
+  transition: height 0.5s ease-in;
 }
 
 .mobile-nav ul li {
@@ -239,7 +243,7 @@ section {
 }
 
 .section-img img {
-  width: 100%;
+  width: 85%;
   height: 100%;
 }
 

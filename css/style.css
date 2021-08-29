@@ -222,7 +222,7 @@ section {
   gap: 4rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-around;
 }
 
 .section-img {

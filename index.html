@@ -1,170 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Web developer" />
-    <meta name="theme-color" content="#1d1d1d" />
-    <title>Dixit Parmar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="./assets/favicon (1).ico"
-      type="image/x-icon"
-    />
-    <link rel="icon" href="./assets/favicon (1).ico" type="image/x-icon" />
-    <script src="./js/main.js"></script>
-  </head>
-  <body>
-    <nav class="navbar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Web developer" />
+  <meta name="theme-color" content="#1d1d1d" />
+  <title>Dixit Parmar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./assets/favicon (1).ico" type="image/x-icon" />
+  <link rel="icon" href="./assets/favicon (1).ico" type="image/x-icon" />
+  <script src="./js/main.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#landing" class="text-decoration-none">
       <h2 class="logo">dp</h2>
-      <ul>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#Technologies" class="nav-link">Technologies</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <!-- <li><a href="#aboutme" class="nav-link">About me</a></li> -->
-      </ul>
-    </nav>
+    </a>
+    <ul>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#Technologies" class="nav-link">Technologies</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
 
-    <nav class="mobile-nav" id="mobile-nav">
-      <ul>
-        <li>
-          <a href="#projects" class="nav-link">Projects</a>
-        </li>
-        <li><a href="#Technologies" class="nav-link">Technologies</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <!-- <li><a href="#aboutme" class="nav-link">About me</a></li> -->
-      </ul>
-    </nav>
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li>
+        <a href="#projects" class="nav-link">Projects</a>
+      </li>
+      <li><a href="#Technologies" class="nav-link">Technologies</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
 
-    <button id="mobile-nav-toggle" class="mobile-nav-toggle">
-      <i class="fas fa-bars"></i>
-    </button>
+  <button id="mobile-nav-toggle" class="mobile-nav-toggle">
+    <i class="fas fa-bars"></i>
+  </button>
 
-    <main class="main">
-      <section class="landing">
-        <div class="info">
-          <h1 class="landing-welcome-msg">
-            Hello, I am Dixit,<br />
-            Web developer.
-          </h1>
-          <h3 class="landing-subtitle">ReactJS Developer</h3>
-          <a class="btn contact-btn" href="mailto:dparmar6698@gmail.com"
-            >Contact me !
-          </a>
+  <main class="main">
+    <section class="landing" id="landing">
+      <div class="info">
+        <h1 class="landing-welcome-msg">
+          Hello, I am Dixit,<br />
+          Web developer.
+        </h1>
+        <h3 class="landing-subtitle">MERN Developer</h3>
+        <a class="btn contact-btn" target="_blank" href="mailto:dparmar6698@gmail.com">Contact me !
+        </a>
+      </div>
+      <div class="webdev-img">
+        <img src="./assets/svg/hello.svg" alt="web developer hello reactjs developer" />
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <h1 class="section-title">Experience <span id="exp-val"></span></h1>
+      <div class="section-container">
+        <div class="section-img">
+          <img src="./assets/svg/dev-focus.svg" alt="developer focusing projects react js projects" class="" />
         </div>
-        <div class="webdev-img">
-          <img
-            src="./assets/svg/hello.svg"
-            alt="web developer hello reactjs developer"
-          />
-        </div>
-      </section>
-
-      <section class="projects" id="projects">
-        <h1 class="section-title">Projects / Experience</h1>
-        <div class="section-container">
-          <div class="section-img">
-            <img
-              src="./assets/svg/dev-focus.svg"
-              alt="developer focusing projects react js projects"
-              class=""
-            />
-          </div>
-          <div class="section-content">
-            <ul class="project-list">
-              <li class="project-name">Internship : ReactJS Developer</li>
-              <ul class="project-details">
-                <li><a>Kalpas Private ltd. ( 4 Months )</a></li>
-              </ul>
-              <li class="project-name">
-                <a href="https://d-clones.web.app/">Netflix clone </a>
-              </li>
-
-              <li class="project-name">
-                <a href="https://d-messages.web.app/">Whatsapp clone </a>
-              </li>
-              <li class="project-name">
-                <a href="https://d-spotify-clone.web.app/">Spotify clone</a>
-              </li>
-              <li class="project-name">
-                <a href="https://github.com/Dparmar006/OpenLib"
-                  >Open Library ( Django )</a
-                >
-              </li>
-              <li class="project-name">
-                <a href="https://github.com/Dparmar006/bookon"
-                  >BookOn: Booking system ( Django )</a
-                >
-              </li>
+        <div class="section-content">
+          <ul class="project-list">
+            <li class="project-name list-item">CREST Infosystems : Fullstack developper (MERN)</li>
+            <li class="project-name list-item">Tallywiz Pvt. Ltd. (Suvit) : React developer</li>
+            <ul class="project-details list-item">
+              <li><a>Kalpas Private ltd. ( 4 Months )</a></li>
             </ul>
-            <a class="btn section-btn" href="https://github.com/Dparmar006"
-              >View on Github !</a
-            >
-          </div>
+          </ul>
+          <a class="btn section-btn" target="_blank" href="https://github.com/Dparmar006">View on Github !</a>
         </div>
-      </section>
-      <section class="projects" id="Technologies">
-        <h1 class="section-title">Technologies / Skills</h1>
-        <div class="section-container">
-          <div class="section-content">
-            <ul class="project-list">
-              <li class="project-name">HTML, CSS, SASS, BOOTSTRAP</li>
-              <li class="project-name">ReactJS</li>
-              <li class="project-name">Django</li>
-              <li class="project-name">Java</li>
-            </ul>
-          </div>
-          <div class="section-img">
-            <img
-              src="./assets/svg/source_code.svg"
-              alt="developer focusing projects"
-              class=""
-            />
-          </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h1 class="section-title">Projects</h1>
+      <div class="section-container">
+        <div class="section-img">
+          <img src="./assets/svg/projects.svg" alt="developer focusing projects react js projects" class="" />
         </div>
-      </section>
-      <section class="projects" id="contact">
-        <h1 class="section-title">Let's connect</h1>
-        <div class="section-container">
-          <div class="section-img">
-            <img
-              src="./assets/svg/social_notifications.svg"
-              alt="developer focusing projects"
-              class=""
-            />
-          </div>
-          <div class="section-content">
-            <div class="social-media">
-              <a href="http://www.twitter.com/pistanthrobian">
-                <i class="fab fa-twitter-square"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/dixit-parmar/">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="http://instagram.com/pistanthrobian">
-                <i class="fab fa-instagram-square"></i>
-              </a>
-            </div>
-            <a
-              class="btn section-btn resume-btn"
-              href="https://docs.google.com/document/d/1EBRJTXQ3JM-OSE4WzHFLqO1fAEgy-di-cRtavu1dcfc/edit?usp=sharing"
-              >Get resume !</a
-            >
-          </div>
+        <div class="section-content">
+          <ul class="project-list">
+            <li class="project-name list-item">Medbox : Webapp to track medicines for pharmacy</li>
+          </ul>
+          <a class="btn section-btn" target="_blank" href="https://github.com/Dparmar006">View more on Github !</a>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+
+    <section class="projects" id="Technologies">
+      <h1 class="section-title">Technologies / Skills</h1>
+      <div class="section-container">
+        <div class="section-content">
+          <ul class="project-list">
+            <li class="project-name list-item">(JavaScript) ReactJS, NodeJS, ExpressJS, MongoDb</li>
+            <li class="project-name list-item">HTML5, SASS, CSS, BOOTSTRAP</li>
+            <li class="project-name list-item">Java</li>
+          </ul>
+        </div>
+        <div class="section-img">
+          <img src="./assets/svg/source_code.svg" alt="developer focusing projects" class="" />
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="contact">
+      <h1 class="section-title">Let's connect</h1>
+      <div class="section-container">
+        <div class="section-img">
+          <img src="./assets/svg/social_notifications.svg" alt="developer focusing projects" class="" />
+        </div>
+        <div class="section-content">
+          <div class="social-media">
+            <a target="_blank" href="http://www.twitter.com/pistanthrobian">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/dixit-parmar/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <a class="btn section-btn resume-btn" target="_blank"
+            href="https://docs.google.com/document/d/1EBRJTXQ3JM-OSE4WzHFLqO1fAEgy-di-cRtavu1dcfc/edit?usp=sharing">Get
+            resume !</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

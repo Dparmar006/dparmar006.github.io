@@ -49,6 +49,7 @@ i {
 img {
   max-width: 100%;
   user-select: none;
+  pointer-events: none;
 }
 
 ::selection {
@@ -196,7 +197,7 @@ section {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 1rem;
 }
 
 .section-title {
@@ -222,7 +223,7 @@ section {
 }
 
 .section-img img {
-  width: 100%;
+  width: 80%;
   max-width: 100%;
 }
 

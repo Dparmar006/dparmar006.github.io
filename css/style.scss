@@ -60,6 +60,18 @@ img {
   color: #1d1d1d;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='50%'>🐞</text></svg>")
+      16 0,
+    auto;
+}
 .btn {
   border: 4px solid $accentColor;
   padding: 1rem;
@@ -431,7 +443,6 @@ section {
 }
 
 $list: single-emoji, glitter;
-
 
 .list-item {
   margin-left: 1.5rem;

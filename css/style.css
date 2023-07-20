@@ -175,7 +175,9 @@ i {
 section {
   padding: 2rem;
   scroll-snap-align: start;
-  height: 100%;
+  height: calc(100% - 1rem);
+  height: 100dvh;
+  height: calc(100dvh - 1rem);
   overflow: hidden;
 }
 
@@ -246,14 +248,17 @@ section {
   width: 100%;
 }
 
-.projects ul, .experience ul {
+.projects ul,
+.experience ul {
   padding: 0.6rem 0;
 }
-.projects .project-name, .experience .project-name {
+.projects .project-name,
+.experience .project-name {
   padding: 0.6rem 0;
   font-size: 1rem;
 }
-.projects .project-details, .experience .project-details {
+.projects .project-details,
+.experience .project-details {
   margin-left: 4rem;
   font-size: 0.9rem;
   list-style: disc;
@@ -370,5 +375,6 @@ section {
   suffix: " ";
 }
 .list-item {
+  margin-left: 1.5rem;
   list-style-type: single-emoji;
 }/*# sourceMappingURL=style.css.map */

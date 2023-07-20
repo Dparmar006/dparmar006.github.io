@@ -176,7 +176,8 @@ img {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   width: 100%;
-  height: calc(100vh - 1rem);
+  height: 100vh;
+  height: 100dvh;
 }
 
 .main::-webkit-scrollbar {

@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  transition: all 400ms ease-out;
 }
 
 html {
@@ -41,6 +42,9 @@ i {
 
 img {
   max-width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 ::-moz-selection {
@@ -356,8 +360,6 @@ section {
     display: grid;
     place-items: center;
     width: 100%;
-    max-width: 22em;
-    padding: 0 2rem;
   }
 }
 .text-decoration-none {
